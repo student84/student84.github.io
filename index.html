@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>About me</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/index.css" >
 </head>
 <body>
 <nav>
@@ -16,7 +16,11 @@
 
 <img id="avatar" src="images/me.jpg" alt="randomguy">
 
-<div class="basic-info">
+<button id="alert_button">Отключить алерты</button>
+
+<h3 id="about_me">Show info about me</h3>
+
+<div class="basic-info" id="basic-info" hidden>
     <div>
         <em>ФИО</em>: <b>Рачинский Денис Богданович</b>
     </div>
@@ -41,6 +45,6 @@
 
 </div>
 
-
+<script src="./scripts/index.js"></script>
 </body>
 </html>
