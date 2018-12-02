@@ -1,6 +1,15 @@
+let isInfoHidden = true;
 
 const changeVisibility = () => {
-    document.getElementById('basic-info').hidden = !document.getElementById('basic-info').hidden
+	let infoBlock = document.getElementById('basic-info');
+	infoBlock.hidden = !infoBlock.hidden;
+	if (isInfoHidden) {
+		isInfoHidden = false;
+		document.getElementById('about_me').innerText = "Скрыть информацию"
+	} else {
+		isInfoHidden = true;
+		document.getElementById('about_me').innerText = "Показать информацию"	
+	}
 };
 
 document.getElementById('about_me').addEventListener('click', changeVisibility);
